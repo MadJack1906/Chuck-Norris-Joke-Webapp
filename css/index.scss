@@ -1,10 +1,16 @@
 $purple: #635da9;
 
+
+// Screen sizes
+$small: 342px;
+$medium: 781px;
+
 body {
     margin: 0;
     padding: 0;
 
     background-color: $purple;
+
 }
 
 * {
@@ -24,14 +30,40 @@ body {
     padding: 2em;
 
     border-radius: 1.5em;
+
+    @media screen and (max-width: $medium){
+        margin: 1em;
+
+    }
+
+    @media screen and (max-width: $small) {
+        margin: 0.5em;
+        padding: 1em;
+
+        border-radius: 1em;
+    }
 }
 
 .project-name-container {
     margin-bottom: 1em;
+
+    & > * {
+        @media screen and (max-width: $medium) {
+            font-size: 0.5rem;
+
+            margin-bottom: 0.5em;
+        }
+    }
 }
 
 .project-name {
     margin: 0;
+
+    font-size: 2rem;
+
+    @media screen and (max-width: $small) {
+        font-size: 1rem;
+    }
 }
 
 .joke-container {
@@ -42,11 +74,15 @@ body {
     border-radius: 0.5em;
 }
 
+.joke {
+    @media screen and (max-width: $small) {
+        font-size: 0.5rem;
+    }
+}
+
 .next-joke-btn {
     margin: 1em 0;
 }
-
-
 
 .next-joke-button {
     background-color: $purple;
@@ -62,5 +98,13 @@ body {
     &:hover {
         cursor: pointer;
         opacity: 0.5;
+    }
+
+    @media screen and (max-width: $small) {
+        font-size: 0.7rem;
+
+        border-radius: 0.7rem;
+
+        padding: 0.5em 1em;
     }
 }

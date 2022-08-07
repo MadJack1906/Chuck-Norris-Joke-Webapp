@@ -18,19 +18,49 @@ body {
   padding: 2em;
   border-radius: 1.5em;
 }
+@media screen and (max-width: 781px) {
+  .container {
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 342px) {
+  .container {
+    margin: 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+  }
+}
 
 .project-name-container {
   margin-bottom: 1em;
 }
+@media screen and (max-width: 781px) {
+  .project-name-container > * {
+    font-size: 0.5rem;
+    margin-bottom: 0.5em;
+  }
+}
 
 .project-name {
   margin: 0;
+  font-size: 2rem;
+}
+@media screen and (max-width: 342px) {
+  .project-name {
+    font-size: 1rem;
+  }
 }
 
 .joke-container {
   padding: 0.5em;
   background-color: lightgrey;
   border-radius: 0.5em;
+}
+
+@media screen and (max-width: 342px) {
+  .joke {
+    font-size: 0.5rem;
+  }
 }
 
 .next-joke-btn {
@@ -48,6 +78,13 @@ body {
 .next-joke-button:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+@media screen and (max-width: 342px) {
+  .next-joke-button {
+    font-size: 0.7rem;
+    border-radius: 0.7rem;
+    padding: 0.5em 1em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
