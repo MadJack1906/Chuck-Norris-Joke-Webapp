@@ -56,6 +56,8 @@
 // })
 
 
+getJoke();
+
 function getJoke() {
     
     let jokeCtn = document.getElementById("joke");

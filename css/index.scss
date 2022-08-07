@@ -26,6 +26,10 @@ body {
     border-radius: 1.5em;
 }
 
+.project-name-container {
+    margin-bottom: 1em;
+}
+
 .project-name {
     margin: 0;
 }
@@ -36,4 +40,27 @@ body {
     background-color: lightgrey;
 
     border-radius: 0.5em;
+}
+
+.next-joke-btn {
+    margin: 1em 0;
+}
+
+
+
+.next-joke-button {
+    background-color: $purple;
+
+    padding: 1em 1.5em;
+
+    font-weight: 600;
+    color: white;
+
+    border: 0px;
+    border-radius: 1em;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
 }
